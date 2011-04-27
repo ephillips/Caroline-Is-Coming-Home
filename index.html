@@ -1,3 +1,8 @@
+<html>
+<head>
+<title>Caroline Is Coming Home</title>
+<meta name="description" content="When is Caroline coming home?" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript">
 //######################################################################################
 // Author: ricocheting.com
@@ -10,7 +15,7 @@
 // format: dateFuture1 = new Date(year,month-1,day,hour,min,sec)
 // example: dateFuture1 = new Date(2003,03,26,14,15,00) = April 26, 2003 - 2:15:00 pm
 
-dateFuture1 = new Date(2011,4,30,8,52,18);
+dateFuture1 = new Date(2011,4,30,15,00,00);
 
 // TESTING: comment out the line below to print out the "dateFuture" for testing purposes
 //document.write(dateFuture +"<br />");
@@ -57,8 +62,13 @@ function GetCount(ddate,iid){
 }
 
 window.onload=function(){
-	GetCount(dateFuture1, 'countbox1');
+	GetCount(dateFuture1, 'count');
 	//you can add additional countdowns here (just make sure you create dateFuture2 and countbox2 etc for each)
 };
 </script>
-<div id="countbox1"></div>
+</head>
+<body>
+<div id="count"></div>
+</body>
+<!--<p id="credit">This photo comes courtesy of <a href="http://www.flickr.com/photos/dharmasphere/68764253/sizes/l/in/photostream/>premasagar</a></p>-->
+</html>
